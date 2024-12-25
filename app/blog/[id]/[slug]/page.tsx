@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NextBlogPageDynamic = ({ params }: { params: { slug: number } }) => {
+const NextBlogPageDynamic = ({ params }: { params: { slug: string } }) => {
     return (
         <div>
             <p>Next BlogPageDynamic {params.slug}</p>
