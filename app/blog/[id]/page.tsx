@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-const BlogPageDynamic = ({ params }: { params: { id: number } }) => {
+// Dynamic Route Component
+const BlogPageDynamic = ({ params }: { params: { id: string } }) => {
     return (
         <div>
-            <p>BlogPageDynamic {params.id}</p>
+            <p>Blog Page Dynamic : {params?.id}</p>
         </div>
-    )
-}
+    );
+};
 
-export default BlogPageDynamic
+export default BlogPageDynamic;
